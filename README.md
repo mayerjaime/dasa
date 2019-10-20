@@ -1,13 +1,7 @@
-# HTTParty | Cucumber
+# DASA
 
 Repositório do Teste Pratico - Automacao API - DASA
 
-## Bundler
-Instale o Bundler:
-
-```ruby
-$ gem install bundler
-```
 
 ## Projeto
 
