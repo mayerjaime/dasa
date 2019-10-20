@@ -1,0 +1,5 @@
+equipamento_cadastrado_sucesso:    'Equipamento <nome_equip> inserido com sucesso.'
+equipamento_nao_suportado:         'Protocolo <nome_protocolo> não suportado'
+exame_cadastrado_sucesso:          'Exame <nome_exame> inserido com sucesso.'
+exame_equip_nao_cadastrado:        'Você tentou cadastrar um exame para um equipamento que não existe, primeiro cadastre o equipamento <equip_nao_existe>!'
+ordem_exame_nao_cadastrado:        'Não foi possível cadastrar a Ordem pelos seguintes problemas: Exame <cod_exame> não encontrado na base de exames!'
