@@ -5,19 +5,16 @@ end
 
 Then('devo receber o codigo {int} do servico de ordens') do |status_code|
   expect($cad_ordens.code).to eq(status_code)
-  puts $cad_ordens
 end
 
 Then('a mensagem de ordem inserido com sucesso') do
   expect($cad_ordens.parsed_response['amostras'][0]['codigoBarras']).to be_a_kind_of(String)
   expect($cad_ordens.parsed_response['amostras'][0]['codigoBarras']).not_to be_empty
-  puts $cad_ordens
 end
 
 Then('a mensagem informando que o exame nao foi encontrado') do
   msg_exame_nao_encontrado = $param_messages['ordem_exame_nao_cadastrado'].gsub('<cod_exame>', 'EXAMENCJM')
   expect($cad_ordens.gsub(/[']/, '')).to eq(msg_exame_nao_encontrado)
-  puts $cad_ordens
 end
 
 Given('que faco o cadastro da orderm com o seguintes exames') do |table|

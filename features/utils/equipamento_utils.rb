@@ -27,6 +27,5 @@ class Equipamento
                                  'Accept' => 'application/json',
                                  'Content-Type' => 'application/json'
                                })
-                               puts $cad_equip
   end
 end

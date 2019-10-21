@@ -33,8 +33,6 @@ class Ordens
                                   'Accept' => 'application/json',
                                   'Content-Type' => 'application/json'
                                 })
-
-    puts $cad_ordens
   end
 
   def cadastra_ordens_quatro_exames(tbl_exame)
@@ -66,7 +64,5 @@ class Ordens
                                   'Accept' => 'application/json',
                                   'Content-Type' => 'application/json'
                                 })
-
-    puts $cad_ordens
   end
 end
