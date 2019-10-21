@@ -10,7 +10,7 @@ class Exames
       equip = 'TSTJM'
     end
     body = {
-      "codigo": $faker_equip_e_exame,
+      "codigo": $faker_exame,
       "codigoInterface": 'COD A',
       "material": 'SORO',
       "equipamento": equip

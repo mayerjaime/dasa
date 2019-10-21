@@ -7,10 +7,10 @@ class Equipamento
     when 'valido'
       protocolo = 'ASTM'
     when 'invalido'
-      protocolo = $faker_equip_e_exame
+      protocolo = 'JMTPDAPI'
     end
     body = {
-      "nome": $faker_equip_e_exame,
+      "nome": $faker_equip,
       "ip": '172.168.1.2',
       "porta": 8080,
       "protocolo": protocolo,
@@ -27,5 +27,6 @@ class Equipamento
                                  'Accept' => 'application/json',
                                  'Content-Type' => 'application/json'
                                })
+                               puts $cad_equip
   end
 end

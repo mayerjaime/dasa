@@ -8,7 +8,7 @@ Então('devo receber o codigo {int} do servico de exame') do |status_code|
 end
 
 Then('a mensagem de exame inserido com sucesso') do
-  msg_exame_sucesso = $param_messages['exame_cadastrado_sucesso'].gsub('<nome_exame>', $faker_equip_e_exame)
+  msg_exame_sucesso = $param_messages['exame_cadastrado_sucesso'].gsub('<nome_exame>', $faker_exame)
   puts $cad_exame
   expect($cad_exame.gsub(/[']/, '')).to eq(msg_exame_sucesso)
 end
